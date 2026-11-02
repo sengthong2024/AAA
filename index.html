@@ -1,14 +1,275 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="lo">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h2>ທົດລອງສ້າງ GitHub</h2>
-    <h3>ສ້າງທີມສຳລັບພັດທະນາເວັບໄຊ້ 2026</h3>
+    <title>ພາກວິຊາໄອທີ | IT Department</title>
 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Noto Sans Lao", sans-serif;
+            background: #f3f6fb;
+            color: #243247;
+            line-height: 1.8;
+        }
+
+        /* Header */
+        header {
+            background: #102b50;
+            color: white;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #67d5ff;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, #102b50, #1769aa);
+            color: white;
+            text-align: center;
+            padding: 75px 20px;
+        }
+
+        .hero h1 {
+            font-size: 34px;
+            margin-bottom: 12px;
+        }
+
+        .hero h2 {
+            color: #67d5ff;
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            color: #d5e2f0;
+        }
+
+        /* Main */
+        .container {
+            max-width: 1150px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .section-title h2 {
+            color: #102b50;
+            font-size: 27px;
+        }
+
+        .section-title p {
+            color: #718096;
+        }
+
+        /* Cards */
+        .branch-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            text-decoration: none;
+            color: #243247;
+            border: 1px solid #e5eaf1;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 25px #102b5020;
+            border-color: #2385d5;
+        }
+
+        .number {
+            color: #2385d5;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .icon {
+            font-size: 38px;
+            margin: 12px 0;
+        }
+
+        .card h3 {
+            color: #102b50;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .card p {
+            color: #718096;
+            font-size: 14px;
+        }
+
+        .more {
+            display: inline-block;
+            margin-top: 15px;
+            color: #2385d5;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            background: #102b50;
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+        }
+
+        footer p {
+            color: #c8d8ed;
+            font-size: 14px;
+        }
+
+        /* Responsive */
+        @media (max-width: 800px) {
+            .branch-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 500px) {
+            .branch-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 26px;
+            }
+
+            .hero h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            IT <span>DEPARTMENT</span>
+        </div>
+        <a href="#branches">ສາຂາຮຽນ</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>ພາກວິຊາໄອທີ</h1>
+        <h2>ຮຽນຮູ້ເຕັກໂນໂລຊີ ສ້າງອະນາຄົດ</h2>
+        <p>
+            ພັດທະນາຄວາມຮູ້ ແລະ ທັກສະ
+            ກ້າວສູ່ໂລກດິຈິຕອນ
+        </p>
+    </section>
+
+    <!-- Branches -->
+    <main class="container" id="branches">
+
+        <div class="section-title">
+            <h2>ສາຂາວິຊາທີ່ເປີດສອນ</h2>
+            <p>ຄົ້ນພົບ 6 ສາຂາຮຽນຂອງພາກວິຊາໄອທີ</p>
+        </div>
+
+        <div class="branch-grid">
+
+            <!-- Branch 1 -->
+            <a href="page/b01.html" class="card">
+                <div class="number">ສາຂາທີ 01</div>
+                <div class="icon">🔧</div>
+                <h3>ຕິດຕັ້ງ ແລະ ສ້ອມແປງ</h3>
+                <p>ອຸປະກອນເຕັກໂນໂລຊີ</p>
+                <span class="more">ລາຍລະອຽດ →</span>
+            </a>
+
+            <!-- Branch 2 -->
+            <a href="page/b02.html" class="card">
+                <div class="number">ສາຂາທີ 02</div>
+                <div class="icon">🌐</div>
+                <h3>ເຕັກນິກເຄືອຂ່າຍ</h3>
+                <p>Network Technology</p>
+                <span class="more">ລາຍລະອຽດ →</span>
+            </a>
+
+            <!-- Branch 3 -->
+            <a href="page/b03.html" class="card">
+                <div class="number">ສາຂາທີ 03</div>
+                <div class="icon">💻</div>
+                <h3>ນັກພັດທະນາໂປຣແກຣມ</h3>
+                <p>Software Development</p>
+                <span class="more">ລາຍລະອຽດ →</span>
+            </a>
+
+            <!-- Branch 4 -->
+            <a href="page/b04.html" class="card">
+                <div class="number">ສາຂາທີ 04</div>
+                <div class="icon">🖥️</div>
+                <h3>ນັກອອກແບບເວັບໄຊ</h3>
+                <p>Website Design</p>
+                <span class="more">ລາຍລະອຽດ →</span>
+            </a>
+
+            <!-- Branch 5 -->
+            <a href="page/b05.html" class="card">
+                <div class="number">ສາຂາທີ 05</div>
+                <div class="icon">🎨</div>
+                <h3>ກຣາບຟິກ ແລະ ສື່</h3>
+                <p>Graphic & Media Design</p>
+                <span class="more">ລາຍລະອຽດ →</span>
+            </a>
+
+            <!-- Branch 6 -->
+            <a href="page/b06.html" class="card">
+                <div class="number">ສາຂາທີ 06</div>
+                <div class="icon">🎬</div>
+                <h3>ເອນິເມຊັ່ນ ມັນຕິມີເດຍ</h3>
+                <p>Animation & Multimedia</p>
+                <span class="more">ລາຍລະອຽດ →</span>
+            </a>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <h3>ພາກວິຊາໄອທີ</h3>
+        <p>ຮຽນຮູ້ ພັດທະນາ ແລະ ສ້າງສັນເຕັກໂນໂລຊີ</p>
+        <p>© 2026 IT Department</p>
+    </footer>
 
 </body>
 </html>
